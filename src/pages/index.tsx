@@ -1,11 +1,12 @@
+import React from 'react';
+import {HeadMeta} from '../components/HeadMeta';
+import {Page} from '../components/Page';
 
-import Head from 'next/head';
 export default function Index() {
     return (
         <>
-            <Head>
-                <title>Lenka Dusilová test</title>
-            </Head>
+            <HeadMeta />
+            <Page />
         </>
     );
 }
