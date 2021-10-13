@@ -4,18 +4,18 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 16px;
+    padding: 0 0 0 16px;
     box-sizing: border-box;
     position: absolute;
     bottom: 64px;
-    left: 64px;
-    right: 64px;
+    left: 80px;
+    right: 80px;
     color: white;
 
     @media (max-width: 950px) {
         bottom: 32px;
-        left: 32px;
-        right: 32px;
+        left: 42px;
+        right: 42px;
         padding: 0;
     }
 

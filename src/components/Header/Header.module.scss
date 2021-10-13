@@ -34,6 +34,11 @@
                     font-size: 21px;
                     font-weight: bold;
                     text-transform: lowercase;
+                    transition: color 0.8s;
+
+                    &:hover {
+                        color: aqua;
+                    }
                 }
             }
         }
