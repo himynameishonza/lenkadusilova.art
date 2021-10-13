@@ -4,7 +4,7 @@ export default function Index() {
     return (
         <>
             <Head>
-                <title>Lenka Dusilová</title>
+                <title>Lenka Dusilová test</title>
             </Head>
         </>
     );
