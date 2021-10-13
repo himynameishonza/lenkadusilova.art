@@ -1,4 +1,8 @@
 @mixin pageBorder {
     border: 16px solid white;
     background: white;
+
+    @media (max-width: 950px) {
+        border-width: 8px;
+    }
 }

@@ -1,6 +1,6 @@
 import React from 'react';
 import {HeadMeta} from '../components/HeadMeta';
-import {Loader} from '../components/Loader';
+import {HeroBar} from '../components/HeroBar';
 import {Page} from '../components/Page';
 
 export default function Index() {
@@ -8,7 +8,7 @@ export default function Index() {
         <>
             <HeadMeta />
             <Page>
-                <Loader />
+                <HeroBar />
             </Page>
         </>
     );
