@@ -12,8 +12,8 @@ export const Page = ({children, isLoading = false}: PageProps) => {
     return (
         <div className={styles['page']}>
             <div className={styles['page__content']}>
-                {isLoading && <Loader />}
                 <Header />
+                {isLoading && <Loader />}
                 {children}
             </div>
         </div>

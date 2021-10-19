@@ -19,28 +19,34 @@
         padding: 0;
     }
 
-    .hero-bar__expand-video {
+    .hero-bar__video-info {
         display: flex;
         align-items: center;
         font-size: 16px;
         font-weight: bold;
-        cursor: pointer;
-        transition: color 0.8s;
         text-decoration: none;
 
-        svg {
-            height: 20px;
-            fill: #fff;
-            margin-right: 8px;
-            transition: all 0.24s;
+        a {
+            cursor: pointer;
+            svg {
+                height: 24px;
+                fill: #fff;
+                margin-right: 12px;
+                transition: all 0.24s;
+            }
+            &:hover {
+                color: aqua;
+
+                svg {
+                    fill: aqua;
+                    transform: scale(1.2);
+                }
+            }
         }
 
-        &:hover {
-            color: aqua;
-
-            svg {
-                fill: aqua;
-                transform: scale(1.2);
+        span {
+            @media (max-width: 950px) {
+                display: none;
             }
         }
     }
