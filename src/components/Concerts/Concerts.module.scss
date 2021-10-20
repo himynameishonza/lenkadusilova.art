@@ -1,9 +1,24 @@
 @import '../../styles/_mixins.scss';
 
 .concerts {
+    .concerts__loading {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 50%;
+        bottom: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
     .concert {
         display: flex;
         margin-bottom: 42px;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
 
         .concert__date {
             width: 72px;
@@ -39,11 +54,25 @@
             }
 
             a {
+                margin-right: 16px;
+                font-size: 14px;
                 color: aqua;
                 text-decoration: none;
                 transition: color 0.24s;
+
                 &:hover {
                     color: white;
+
+                    svg {
+                        fill: white;
+                    }
+                }
+
+                svg {
+                    width: 12px;
+                    fill: aqua;
+                    margin-left: 8px;
+                    transition: fill 0.24s;
                 }
             }
         }
