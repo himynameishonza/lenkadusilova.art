@@ -12,6 +12,7 @@
         .album__cover {
             width: 175px;
             margin-right: 32px;
+            flex-shrink: 0;
 
             img {
                 width: 100%;
@@ -33,12 +34,16 @@
 
     .info__links {
         display: flex;
+        flex-wrap: wrap;
         a {
             margin-right: 16px;
             font-size: 14px;
             color: aqua;
             text-decoration: none;
             transition: color 0.24s;
+            white-space: nowrap;
+            margin-right: 16px;
+            padding: 4px 0;
 
             &:hover {
                 color: white;
