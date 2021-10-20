@@ -5,17 +5,30 @@
     align-items: center;
     justify-content: space-between;
     padding: 0 0 0 16px;
-    width: 100%;
     box-sizing: border-box;
+    position: fixed;
+    top: 64px;
+    left: 64px;
+    right: 64px;
+    z-index: 998;
 
     @media (max-width: 950px) {
         padding: 0;
+        top: 42px;
+        left: 42px;
+        right: 42px;
     }
 
     .header__logo {
         height: 48px;
         svg {
             height: 48px;
+            fill: #fff;
+            transition: fill 1s;
+        }
+
+        &:hover svg {
+            fill: aqua;
         }
     }
 
@@ -27,6 +40,8 @@
             display: flex;
 
             li {
+                border-bottom: solid transparent 3px;
+                transition: border 2s;
                 a {
                     padding: 16px;
                     color: white;
@@ -35,10 +50,16 @@
                     font-weight: bold;
                     text-transform: lowercase;
                     transition: color 0.8s;
+                    display: block;
 
                     &:hover {
                         color: aqua;
                     }
+                }
+
+                &.active,
+                &:hover {
+                    border-color: aqua;
                 }
             }
         }

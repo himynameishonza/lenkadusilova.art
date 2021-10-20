@@ -1,7 +1,6 @@
 import React, {useState} from 'react';
 import styles from './VideoBackground.module.scss';
 import YouTube from 'react-youtube';
-import {isMobile, isBrowser} from 'react-device-detect';
 
 export type VideoBackgroundProps = {
     videoID?: string,
@@ -35,19 +34,10 @@ export const VideoBackground = ({
         <div className={styles['video-background']}>
             {overlay && <div className={styles['video-background__overlay']} />}
 
-            {isBrowser && (
-                <div className={styles['video-background__container']}>
-                    {/*@ts-ignore*/}
-                    <YouTube videoId={videoID} opts={opts} />;
-                </div>
-            )}
-
-            {isMobile && (
-                <>
-                    <div className={styles['video-background__overlay']} />
-                    <div className={styles['image-background__container']} />
-                </>
-            )}
+            <div className={styles['video-background__container']}>
+                {/*@ts-ignore*/}
+                <YouTube videoId={videoID} opts={opts} />;
+            </div>
         </div>
     );
 };
