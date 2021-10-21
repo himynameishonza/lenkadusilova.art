@@ -1,4 +1,5 @@
 import React, {useState} from 'react';
+import {Downloads} from '../components/Downloads';
 import {Header} from '../components/Header';
 import {HeadMeta} from '../components/HeadMeta';
 import {HeroBar} from '../components/HeroBar';
@@ -17,7 +18,7 @@ export default function Index() {
                 active={5}
                 title="Pro pořadatele"
             >
-                <p>Todo...</p>
+                <Downloads />
             </Page>
         </>
     );

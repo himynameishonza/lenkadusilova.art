@@ -34,7 +34,9 @@ export const Page = ({
         >
             <Header active={active} title={title} />
             {isLoading && <Loader />}
-            <div className={styles['page__content']}>{children}</div>
+            <div className={styles['page__content']}>
+                <div className={styles['content__container']}>{children}</div>
+            </div>
             {(twoColumns || fullPage) && (
                 <div
                     className={styles['page__image']}

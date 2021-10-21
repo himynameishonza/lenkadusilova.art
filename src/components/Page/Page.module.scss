@@ -22,12 +22,16 @@
             padding: 128px 32px 32px 32px;
         }
 
+        .content__container {
+            width: 100%;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
         p {
             line-height: 2;
             font-size: 16px;
             font-weight: 300;
-            max-width: 65ch;
-            margin: 32px auto;
         }
 
         /* width */
