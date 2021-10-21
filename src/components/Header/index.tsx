@@ -1,4 +1,5 @@
 import classnames from 'classnames';
+import {useState} from 'react';
 import styles from './Header.module.scss';
 
 export type HeaderProps = {
@@ -7,6 +8,8 @@ export type HeaderProps = {
 };
 
 export const Header = ({active = 0, title}: HeaderProps) => {
+    const [mobileNav, setMobileNav] = useState(false);
+
     return (
         <div className={styles['header']}>
             <a className={styles['header__logo']} href="/">
@@ -19,12 +22,22 @@ export const Header = ({active = 0, title}: HeaderProps) => {
                 </svg>
                 <span>{title}</span>
             </a>
-            <a className={styles['header__toggle']}>
-                <svg viewBox="0 0 448 512">
-                    <path d="M442 114H6a6 6 0 0 1-6-6V84a6 6 0 0 1 6-6h436a6 6 0 0 1 6 6v24a6 6 0 0 1-6 6zm0 160H6a6 6 0 0 1-6-6v-24a6 6 0 0 1 6-6h436a6 6 0 0 1 6 6v24a6 6 0 0 1-6 6zm0 160H6a6 6 0 0 1-6-6v-24a6 6 0 0 1 6-6h436a6 6 0 0 1 6 6v24a6 6 0 0 1-6 6z"></path>
-                </svg>
+            <a className={styles['header__toggle']} onClick={() => setMobileNav(!mobileNav)}>
+                {mobileNav ? (
+                    <svg viewBox="0 0 320 512">
+                        <path d="M193.94 256L296.5 153.44l21.15-21.15c3.12-3.12 3.12-8.19 0-11.31l-22.63-22.63c-3.12-3.12-8.19-3.12-11.31 0L160 222.06 36.29 98.34c-3.12-3.12-8.19-3.12-11.31 0L2.34 120.97c-3.12 3.12-3.12 8.19 0 11.31L126.06 256 2.34 379.71c-3.12 3.12-3.12 8.19 0 11.31l22.63 22.63c3.12 3.12 8.19 3.12 11.31 0L160 289.94 262.56 392.5l21.15 21.15c3.12 3.12 8.19 3.12 11.31 0l22.63-22.63c3.12-3.12 3.12-8.19 0-11.31L193.94 256z"></path>
+                    </svg>
+                ) : (
+                    <svg viewBox="0 0 448 512">
+                        <path d="M442 114H6a6 6 0 0 1-6-6V84a6 6 0 0 1 6-6h436a6 6 0 0 1 6 6v24a6 6 0 0 1-6 6zm0 160H6a6 6 0 0 1-6-6v-24a6 6 0 0 1 6-6h436a6 6 0 0 1 6 6v24a6 6 0 0 1-6 6zm0 160H6a6 6 0 0 1-6-6v-24a6 6 0 0 1 6-6h436a6 6 0 0 1 6 6v24a6 6 0 0 1-6 6z"></path>
+                    </svg>
+                )}
             </a>
-            <nav className={styles['header__navigation']}>
+            <nav
+                className={classnames(styles['header__navigation'], {
+                    [styles['header__navigation--active']]: mobileNav,
+                })}
+            >
                 <ul>
                     <li className={classnames({[styles['active']]: active === 1})}>
                         <a href="/o-lence">O Lence</a>
