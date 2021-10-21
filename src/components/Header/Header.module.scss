@@ -21,6 +21,8 @@
 
     .header__logo {
         height: 48px;
+        display: flex;
+        align-items: center;
         svg {
             height: 48px;
             fill: #fff;
@@ -29,6 +31,18 @@
 
         &:hover svg {
             fill: aqua;
+        }
+        span {
+            font-size: 24px;
+            font-weight: bold;
+            color: white;
+            text-transform: lowercase;
+            margin-left: 24px;
+            display: none;
+
+            @media (max-width: 950px) {
+                display: block;
+            }
         }
     }
 

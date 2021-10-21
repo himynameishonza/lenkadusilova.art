@@ -3,9 +3,10 @@ import styles from './Header.module.scss';
 
 export type HeaderProps = {
     active?: number,
+    title?: string,
 };
 
-export const Header = ({active = 0}: HeaderProps) => {
+export const Header = ({active = 0, title}: HeaderProps) => {
     return (
         <div className={styles['header']}>
             <a className={styles['header__logo']} href="/">
@@ -16,6 +17,7 @@ export const Header = ({active = 0}: HeaderProps) => {
                         transform="translate(-688 -418)"
                     />
                 </svg>
+                <span>{title}</span>
             </a>
             <a className={styles['header__toggle']}>
                 <svg viewBox="0 0 448 512">

@@ -7,4 +7,9 @@ html,
     width: 100%;
     height: 100%;
     font-family: 'Ubuntu', 'Helvetica', sans-serif;
+
+    a {
+        text-decoration: none;
+        transition: color 0.24s;
+    }
 }

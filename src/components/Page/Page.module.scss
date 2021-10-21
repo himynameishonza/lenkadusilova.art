@@ -89,7 +89,8 @@
         }
     }
 
-    &.page--cols {
+    &.page--cols,
+    &.page--full {
         background: black;
 
         .page__content {
@@ -99,6 +100,36 @@
                 background: rgba(black, 0.8);
                 padding-right: 42px;
                 z-index: 1;
+            }
+        }
+    }
+
+    &.page--full {
+        .page__image {
+            width: 100%;
+            display: block;
+            background-position: center;
+        }
+
+        .page__content {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+
+            article {
+                padding: 16px 0;
+            }
+
+            p {
+                margin: inherit;
+            }
+
+            a {
+                color: white;
+
+                &:hover {
+                    color: aqua;
+                }
             }
         }
     }
