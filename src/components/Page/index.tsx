@@ -35,6 +35,7 @@ export const Page = ({
             <Header active={active} title={title} />
             {isLoading && <Loader />}
             <div className={styles['page__content']}>
+                {!fullPage && twoColumns && <div className={styles['content__transition']} />}
                 <div className={styles['content__container']}>{children}</div>
             </div>
             {(twoColumns || fullPage) && (

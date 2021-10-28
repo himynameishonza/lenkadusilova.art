@@ -18,6 +18,27 @@
         scroll-behavior: smooth;
         position: relative;
 
+        .content__transition {
+            background: linear-gradient(
+                180deg,
+                rgba(0, 0, 0, 1) 0%,
+                rgba(0, 0, 0, 1) 50%,
+                rgba(0, 0, 0, 0) 100%
+            );
+            position: fixed;
+            top: 16px;
+            left: 16px;
+            right: 50%;
+            height: 164px;
+            z-index: 5;
+
+            @media (max-width: 950px) {
+                top: 8px;
+                left: 8px;
+                right: 8px;
+            }
+        }
+
         @media (max-width: 950px) {
             padding: 128px 32px 32px 32px;
         }
@@ -118,6 +139,11 @@
             display: flex;
             flex-direction: column;
             justify-content: flex-end;
+
+            @media (max-height: 700px) {
+                justify-content: flex-start;
+                padding-top: 148px;
+            }
 
             article {
                 padding: 16px 0;
