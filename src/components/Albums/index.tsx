@@ -9,15 +9,15 @@ const albums = [
         links: [
             {
                 name: 'Animal Music',
-                link: '#',
+                link: 'https://animalmusic.cz/en/album/lenka-dusilova-reka',
             },
             {
                 name: 'Supraphonline',
-                link: '#',
+                link: 'https://www.supraphonline.cz/album/591283-reka',
             },
             {
-                name: 'Apple iTunes',
-                link: '#',
+                name: 'Apple iTunes Store',
+                link: 'https://music.apple.com/cz/album/%C5%99eka/1539404729?l=cs',
             },
         ],
     },
@@ -29,11 +29,11 @@ const albums = [
         links: [
             {
                 name: 'Supraphonline',
-                link: '#',
+                link: 'https://www.supraphonline.cz/album/83901-v-hodine-smrti',
             },
             {
-                name: 'Apple iTunes',
-                link: '#',
+                name: 'Apple iTunes Store',
+                link: 'https://music.apple.com/cz/album/v-hodin%C4%9B-smrti/1380679808?l=cs',
             },
         ],
     },
@@ -45,11 +45,11 @@ const albums = [
         links: [
             {
                 name: 'Supraphonline',
-                link: '#',
+                link: 'https://www.supraphonline.cz/album/27932-live-at-cafe-v-lese',
             },
             {
-                name: 'Apple iTunes',
-                link: '#',
+                name: 'Apple iTunes Store',
+                link: 'https://music.apple.com/cz/album/live-at-caf%C3%A9-v-lese/1392958872?l=cs',
             },
         ],
     },
@@ -61,11 +61,11 @@ const albums = [
         links: [
             {
                 name: 'Supraphonline',
-                link: '#',
+                link: 'https://www.supraphonline.cz/album/2654-baromantika',
             },
             {
-                name: 'Apple iTunes',
-                link: '#',
+                name: 'Apple iTunes Store',
+                link: 'https://music.apple.com/cz/album/baromantika/1384662992?l=cs',
             },
         ],
     },
@@ -74,7 +74,12 @@ const albums = [
         name: 'Eternal Seekers',
         released: '2008',
         label: 'Animal Music',
-        links: [],
+        links: [
+            {
+                name: 'Supraphonline',
+                link: 'https://www.supraphonline.cz/album/2917-eternal-seekers',
+            },
+        ],
     },
     {
         cover: 'static/images/albums/6.jpg',
@@ -84,11 +89,11 @@ const albums = [
         links: [
             {
                 name: 'Supraphonline',
-                link: '#',
+                link: 'https://www.supraphonline.cz/album/3558-mezi-svety',
             },
             {
-                name: 'Apple iTunes',
-                link: '#',
+                name: 'Apple iTunes Store',
+                link: 'https://music.apple.com/cz/album/mezi-svety/1443654849?l=cs',
             },
         ],
     },
@@ -100,11 +105,11 @@ const albums = [
         links: [
             {
                 name: 'Supraphonline',
-                link: '#',
+                link: 'https://www.supraphonline.cz/album/3558-mezi-svety',
             },
             {
                 name: 'Apple iTunes',
-                link: '#',
+                link: 'https://music.apple.com/cz/album/mezi-svety/1443654849?l=cs',
             },
         ],
     },
@@ -123,11 +128,11 @@ const albums = [
         links: [
             {
                 name: 'Supraphonline',
-                link: '#',
+                link: 'https://www.supraphonline.cz/album/3718-spatrit-svetlo-sveta',
             },
             {
-                name: 'Apple iTunes',
-                link: '#',
+                name: 'Apple iTunes Store',
+                link: 'https://music.apple.com/cz/album/spatrit-svetlo-sveta/1443549316?l=cs',
             },
         ],
     },
@@ -139,11 +144,11 @@ const albums = [
         links: [
             {
                 name: 'Supraphonline',
-                link: '#',
+                link: 'https://www.supraphonline.cz/album/3744-lenka-dusilova',
             },
             {
-                name: 'Apple iTunes',
-                link: '#',
+                name: 'Apple iTunes Store',
+                link: '#https://music.apple.com/cz/album/lenka-dusilova/1443570654?l=cs',
             },
         ],
     },
