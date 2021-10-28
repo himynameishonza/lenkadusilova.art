@@ -11,7 +11,7 @@ const files = [
         },
         {
             fileURL: 'static/files/LenkaDusilova-Kvety_text.pdf',
-            name: 'Lenka Dusilová & Květy - Anotace',
+            name: 'Lenka Dusilová feat. Květy - Anotace',
             description: '',
             size: '529 kB',
             type: 'PDF',
@@ -42,14 +42,14 @@ const files = [
         },
         {
             fileURL: 'static/files/LenkaDusilova-Kvety_stageplan.pdf',
-            name: 'Lenka Dusilová & Květy - Stageplan',
+            name: 'Lenka Dusilová feat. Květy - Stageplan',
             description: '',
             size: '357 kB',
             type: 'PDF',
         },
         {
             fileURL: 'static/files/LenkaDusilova-Kvety_repertoarovy-list.docx',
-            name: 'Lenka Dusilová & Květy - Repertoárový list',
+            name: 'Lenka Dusilová feat. Květy - Repertoárový list',
             description: '',
             size: '14 kB',
             type: 'DOCX',
@@ -72,7 +72,7 @@ const files = [
         },
         {
             fileURL: 'static/files/Promo3_FrantisekOrtmann.jpeg',
-            name: 'Promo foto #3 - Lenka Dusilová & Květy',
+            name: 'Promo foto #3 - Lenka Dusilová feat. Květy',
             description: '© František Ortmann',
             size: '14,9 MB',
             type: 'JPG',
