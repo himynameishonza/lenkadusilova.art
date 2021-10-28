@@ -87,7 +87,8 @@ export default function Index() {
                 </p>
                 <p>
                     V roce 2021 se vydává nejen na sólové turné s novou deskou, ale představuje i
-                    nový projekt s kapelou Květy, na jejichž turné se můžete těšit v roce 2022.
+                    nový projekt s kapelou Květy, na jejichž společné koncerty se můžete těšit v
+                    roce 2022.
                 </p>
             </Page>
         </>

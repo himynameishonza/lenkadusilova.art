@@ -20,7 +20,11 @@ export const HeroBar = ({muteControl, muted}: HeroBarProps) => {
                         </svg>
                     )}
                 </a>
-                <span>Lenka Dusilová feat. Květy - Vlákna</span>
+                <span>
+                    <a href="https://www.youtube.com/watch?v=cjB5LzRT_jk" target="_blank">
+                        Lenka Dusilová feat. Květy - Vlákna
+                    </a>
+                </span>
             </div>
 
             <nav className={styles['hero-bar__links']}>

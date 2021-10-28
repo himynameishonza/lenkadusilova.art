@@ -99,7 +99,7 @@ export const Concerts = ({muteControl}: ConcertsProps) => {
         <>
             <div className={styles['concerts']}>
                 {loading ? (
-                    <div className={styles['concerts__loading']}>Načítám koncerty</div>
+                    <div className={styles['concerts__loading']}>Načítám koncerty...</div>
                 ) : (
                     concerts.children.map((concert, index) => (
                         <div className={styles['concert']} key={index}>

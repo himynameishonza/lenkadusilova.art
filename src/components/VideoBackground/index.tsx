@@ -4,7 +4,6 @@ import YouTube from 'react-youtube';
 
 export type VideoBackgroundProps = {
     videoID?: string,
-    overlay?: boolean,
     startTime?: number,
     endTime?: number,
     muted?: any,
@@ -12,7 +11,6 @@ export type VideoBackgroundProps = {
 
 export const VideoBackground = ({
     videoID,
-    overlay = false,
     startTime = 0,
     endTime,
     muted = 1,
@@ -30,13 +28,20 @@ export const VideoBackground = ({
         },
     };
 
+    const [videoLoading, setVideoLoading] = useState(true);
     return (
         <div className={styles['video-background']}>
-            {overlay && <div className={styles['video-background__overlay']} />}
+            {videoLoading && (
+                <>
+                    <div className={styles['video-background__overlay']} />
+                    <div className={styles['video-background__static']} />
+                </>
+            )}
 
             <div className={styles['video-background__container']}>
                 {/*@ts-ignore*/}
-                <YouTube videoId={videoID} opts={opts} />;
+
+                <YouTube videoId={videoID} opts={opts} onPlay={() => setVideoLoading(false)} />
             </div>
         </div>
     );

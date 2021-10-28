@@ -27,13 +27,12 @@
             max-width: 600px;
             margin: 0 auto;
         }
-
         p {
             line-height: 2;
             font-size: 16px;
             font-weight: 300;
+            margin: 24px 0;
         }
-
         /* width */
         &::-webkit-scrollbar {
             width: 3px;
