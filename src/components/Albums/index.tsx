@@ -86,16 +86,7 @@ const albums = [
         name: 'Mezi světy (US Edice)',
         released: '2006',
         label: 'Yonas Media',
-        links: [
-            {
-                name: 'Supraphonline',
-                link: 'https://www.supraphonline.cz/album/3558-mezi-svety',
-            },
-            {
-                name: 'Apple iTunes Store',
-                link: 'https://music.apple.com/cz/album/mezi-svety/1443654849?l=cs',
-            },
-        ],
+        links: [],
     },
     {
         cover: 'static/images/albums/6.jpg',
