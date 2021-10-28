@@ -22,8 +22,8 @@ export const HeadMeta = ({ pageTitle, pageDescription, pageImage }: HeadMetaProp
       <meta property="og:title" content={"Lenka Dusilová " + pageTitle && " - " + pageTitle} />
       <meta name="description" content={pageDescription ? pageDescription : defaultPageDescription} />
       <meta property="og:description" content={pageDescription ? pageDescription : defaultPageDescription} />
-      <meta property="og:image" content={pageImage ? pageImage : '/static/og-images/main.jpg'} />
-      <meta name="fb:app_id" content="" />
+      <meta property="og:image" content={pageImage ? pageImage : '/static/images/og.jpg'} />
+      <meta name="fb:app_id" content="47460271846" />
       <meta property="og:url" content={'https://lenkadusilova.art' + router.asPath} />
       <meta property="og:site_name" content="Lenka Dusilová" />
       <meta property="og:type" content="website" />
