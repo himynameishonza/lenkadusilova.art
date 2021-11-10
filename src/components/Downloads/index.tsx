@@ -57,16 +57,16 @@ const files = [
     ],
     [
         {
-            fileURL: 'static/files/Promo1_BenOrten.jpg',
+            fileURL: 'static/files/Promo1_BetOrten.jpg',
             name: 'Promo foto #1 - Album Řeka',
-            description: '© Ben Orten',
+            description: '© Bet Orten',
             size: '3,7 MB',
             type: 'JPG',
         },
         {
-            fileURL: 'static/files/Promo2_BenOrten.jpg',
+            fileURL: 'static/files/Promo2_BetOrten.jpg',
             name: 'Promo foto #2 - Album Řeka',
-            description: '© Ben Orten',
+            description: '© Bet Orten',
             size: '823 kB',
             type: 'JPG',
         },
