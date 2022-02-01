@@ -1,5 +1,4 @@
 import React, {useState} from 'react';
-import {Header} from '../components/Header';
 import {HeadMeta} from '../components/HeadMeta';
 import {HeroBar} from '../components/HeroBar';
 import {Page} from '../components/Page';

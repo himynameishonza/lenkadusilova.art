@@ -1,16 +1,11 @@
-import React, {useState} from 'react';
-import {Header} from '../components/Header';
+import React from 'react';
 import {HeadMeta} from '../components/HeadMeta';
-import {HeroBar} from '../components/HeroBar';
 import {Page} from '../components/Page';
-import {VideoBackground} from '../components/VideoBackground';
 
 export default function Index() {
-    const [muted, setMuted] = useState(true);
-
     return (
         <>
-            <HeadMeta />
+            <HeadMeta pageTitle="O Lence" />
             <Page background="static/images/o-lence.jpg" twoColumns active={1} title="O Lence">
                 <p>
                     Lenka Dusilová, devítinásobná držitelka výročních hudebních cen Anděl, není

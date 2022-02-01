@@ -12,14 +12,14 @@ export type HeadMetaProps = {
 
 export const HeadMeta = ({ pageTitle, pageDescription, pageImage }: HeadMetaProps) => {
   const router = useRouter()
-
+  const title = pageTitle ? "Lenka Dusilová" + " –⁠ " + pageTitle : "Lenka Dusilová";
   return (
     <Head>
       <meta name="viewport" content="width=device-width, initial-scale=1" />
       <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
       <meta charSet="utf-8" />
-      <title>Lenka Dusilová {pageTitle && " - " + pageTitle}</title>
-      <meta property="og:title" content={"Lenka Dusilová " + pageTitle && " - " + pageTitle} />
+      <title>{title}</title>
+      <meta property="og:title" content={title}/>
       <meta name="description" content={pageDescription ? pageDescription : defaultPageDescription} />
       <meta property="og:description" content={pageDescription ? pageDescription : defaultPageDescription} />
       <meta property="og:image" content={pageImage ? pageImage : '/static/images/og.jpg'} />
