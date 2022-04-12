@@ -10,13 +10,12 @@ const files = [
             type: 'PDF',
         },
         {
-            fileURL: 'static/files/LenkaDusilova-Kvety_text.pdf',
-            name: 'Lenka Dusilová feat. Květy - Anotace',
+            fileURL: 'static/files/LenkaDusilova-band_text.pdf',
+            name: 'Lenka Dusilová BAND',
             description: '',
-            size: '529 kB',
+            size: '271 kB',
             type: 'PDF',
         },
-
         {
             fileURL: 'static/files/LenkaDusilova-AidKid_text.pdf',
             name: 'Lenka Dusilová & Aid Kid - Anotace',
@@ -40,20 +39,6 @@ const files = [
             size: '173 kB',
             type: 'PDF',
         },
-        {
-            fileURL: 'static/files/LenkaDusilova-Kvety_stageplan.pdf',
-            name: 'Lenka Dusilová feat. Květy - Stageplan',
-            description: '',
-            size: '357 kB',
-            type: 'PDF',
-        },
-        {
-            fileURL: 'static/files/LenkaDusilova-Kvety_repertoarovy-list.docx',
-            name: 'Lenka Dusilová feat. Květy - Repertoárový list',
-            description: '',
-            size: '14 kB',
-            type: 'DOCX',
-        },
     ],
     [
         {
@@ -68,13 +53,6 @@ const files = [
             name: 'Promo foto #2 - Album Řeka',
             description: '© Bet Orten',
             size: '823 kB',
-            type: 'JPG',
-        },
-        {
-            fileURL: 'static/files/Promo3_FrantisekOrtmann.jpeg',
-            name: 'Promo foto #3 - Lenka Dusilová feat. Květy',
-            description: '© František Ortmann',
-            size: '14,9 MB',
             type: 'JPG',
         },
         {
