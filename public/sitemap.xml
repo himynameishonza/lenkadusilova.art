@@ -1,6 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>http://lenkadusilova.art/</loc>
+    <loc>http://lenkadusilova.art/index</loc>
+  </url>
+  <url>
+    <loc>http://lenkadusilova.art/o-lence</loc>
+  </url>
+  <url>
+    <loc>http://lenkadusilova.art/diskografie</loc>
+  </url>
+  <url>
+    <loc>http://lenkadusilova.art/koncerty</loc>
+  </url>
+  <url>
+    <loc>http://lenkadusilova.art/pro-poradatele</loc>
+  </url>
+  <url>
+    <loc>http://lenkadusilova.art/kontakt</loc>
   </url>
 </urlset>
