@@ -38,7 +38,8 @@ export const HeadMeta = ({ pageTitle, pageDescription, pageImage }: HeadMetaProp
       <link rel="shortcut icon" href="/static/favicon/favicon.ico" />
       <meta name="msapplication-TileColor" content="#222222" />
       <meta name="msapplication-config" content="/static/favicon/browserconfig.xml" />
-      <meta name="robots" content="noindex, nofollow" />
+      <meta name="robots" content="index, follow" />
+      <meta name="googlebot" content="index, follow" />
       <meta name="theme-color" content="#ffffff" />
     </Head>
   )

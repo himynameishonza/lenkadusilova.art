@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://lenkadusilova.art/sitemap.xml
