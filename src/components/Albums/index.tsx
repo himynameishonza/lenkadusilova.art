@@ -9,7 +9,7 @@ const albums = [
         links: [
             {
                 name: 'Animal Music',
-                link: 'https://animalmusic.cz/en/album/lenka-dusilova-reka',
+                link: 'https://animalmusic.cz/album/lenka-dusilova-reka-0',
             },
             {
                 name: 'Supraphonline',

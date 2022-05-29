@@ -48,6 +48,15 @@ export const Header = ({active = 0, title}: HeaderProps) => {
                     <li className={classnames({[styles['active']]: active === 3})}>
                         <a href="/diskografie">Diskografie</a>
                     </li>
+                    <li>
+                        <a
+                            href="/https://lenkadusilova.unimerch.cz/vse"
+                            target="_blank"
+                            rel="noreferrer"
+                        >
+                            Shop
+                        </a>
+                    </li>
                     <li className={classnames({[styles['active']]: active === 4})}>
                         <a href="/kontakt">Kontakt</a>
                     </li>
