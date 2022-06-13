@@ -1,12 +1,12 @@
 import axios from 'axios';
-import { useEffect, useState } from 'react';
+import {useEffect, useState} from 'react';
 import styles from './Concerts.module.scss';
 
 export type ConcertsProps = {
     muteControl?: any,
 };
 
-export const Concerts = ({ muteControl }: ConcertsProps) => {
+export const Concerts = ({muteControl}: ConcertsProps) => {
     const [data, setData] = useState(null);
     const [concerts, setConcerts] = useState(null);
     const [loading, setLoading] = useState(true);
@@ -21,8 +21,23 @@ export const Concerts = ({ muteControl }: ConcertsProps) => {
     };
 
     const parseMonth = date => {
-        var d = new Date(date)
-        return ['Leden', 'Únor', 'Březen', 'Duben', 'Květen', 'Červen', 'Červenec', 'Srpen', 'Září', 'Říjen', 'Listopad', 'Prosinec'][d.getMonth()] || "Neuvedeno"
+        var d = new Date(date);
+        return (
+            [
+                'Leden',
+                'Únor',
+                'Březen',
+                'Duben',
+                'Květen',
+                'Červen',
+                'Červenec',
+                'Srpen',
+                'Září',
+                'Říjen',
+                'Listopad',
+                'Prosinec',
+            ][d.getMonth()] || 'Neuvedeno'
+        );
     };
 
     useEffect(() => {
@@ -61,7 +76,8 @@ export const Concerts = ({ muteControl }: ConcertsProps) => {
                             </div>
 
                             <div className={styles['concert__info']}>
-                                <h4>{concert.children[6].value}</h4>
+                                <h4 dangerouslySetInnerHTML={{__html: concert.children[6].value}} />
+                                {console.log(concert.children[6].value)}
                                 <p>
                                     {concert.children[8].value} @ {concert.children[5].value},{' '}
                                     {concert.children[4].value}
