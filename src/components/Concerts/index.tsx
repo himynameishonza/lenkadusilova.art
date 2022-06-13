@@ -77,7 +77,6 @@ export const Concerts = ({muteControl}: ConcertsProps) => {
 
                             <div className={styles['concert__info']}>
                                 <h4 dangerouslySetInnerHTML={{__html: concert.children[6].value}} />
-                                {console.log(concert.children[6].value)}
                                 <p>
                                     {concert.children[8].value} @ {concert.children[5].value},{' '}
                                     {concert.children[4].value}
